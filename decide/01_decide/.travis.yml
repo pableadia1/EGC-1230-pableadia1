@@ -19,7 +19,7 @@ install:
   - pip install -r requirements.txt
   - pip install codacy-coverage
 script:
-  - cd decide/01_decice
+  - 01_decice/cd decide
   - coverage run --branch --source=. ./manage.py test authentication && census --keepdb 
   - coverage xml
   - python-codacy-coverage -r coverage.xml
